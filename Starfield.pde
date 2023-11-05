@@ -70,7 +70,9 @@ class OddballParticle extends Particle{
   }
   void show(){
     fill(myColor);
-    rect((float)myX, (float)myY, 20,20);    
+    ellipse((float)myX, (float)myY, 50,50);    
+    ellipse((float)myX+50, (float)myY+50, 50,50); 
+    ellipse((float)myX-50, (float)myY+50, 50,50);  
   }
   void drift(){
     if (mouseX > myX){
